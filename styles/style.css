@@ -53,6 +53,7 @@ main h2 {
 main .container {
   padding: 12px;
   max-width: 500px;
+  height: 500px;
   margin: auto;
 }
 main .container .fila {
