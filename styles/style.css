@@ -32,34 +32,36 @@ body {
   font-family: "Roboto Mono";
 }
 
-h1 {
-  margin-top: 20px;
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px auto;
+}
+main h1 {
   font-size: 40px;
   text-align: center;
   color: #fff;
   font-weight: bold;
 }
-
-h2 {
-  margin-bottom: 20px;
+main h2 {
   font-size: 35px;
   text-align: center;
   color: #ec780c;
   letter-spacing: 5px;
 }
-
-.container {
+main .container {
   padding: 12px;
   max-width: 500px;
   margin: auto;
 }
-.container .fila {
+main .container .fila {
   display: flex;
   justify-content: space-between;
   text-align: center;
   margin: 10px 0;
 }
-.container .fila .palabra {
+main .container .fila .palabra {
   width: 45%;
   text-align: center;
   color: #ff6961;
@@ -68,7 +70,7 @@ h2 {
   border-radius: 30px;
   border: 2px solid #3b31ac;
 }
-.container .fila input {
+main .container .fila input {
   width: 45%;
   text-align: center;
   color: #ff6961;
@@ -79,7 +81,7 @@ h2 {
   background: transparent;
   outline: none;
 }
-.container button {
+main .container button {
   border: none;
   background-color: #1b1634;
   color: #fff;
@@ -95,9 +97,9 @@ h2 {
           animation: zoom 1.5s infinite linear;
 }
 
-.niveles {
+footer .niveles {
   background-color: #0e0d12;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -106,7 +108,7 @@ h2 {
   justify-content: center;
   padding: 10px 0;
 }
-.niveles .nivel {
+footer .niveles .nivel {
   background-color: #353444;
   width: 60px;
   height: 50px;
@@ -118,7 +120,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.niveles .nivel i {
+footer .niveles .nivel i {
   font-size: 35px;
   color: #0e0d12;
 }

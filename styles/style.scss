@@ -15,81 +15,87 @@ body{
 	font-family: 'Roboto Mono';
 }
 
-h1{
-	margin-top: 20px;
-	font-size: 40px;
-	text-align: center;
-	color: $text-color;
-	font-weight: bold;
-}
-
-h2{
-	margin-bottom: 20px;
-	font-size: 35px;
-	text-align: center;
-	color: $first-color;
-	letter-spacing: 5px;
-}
-
-.container{
-	padding: 12px;
-	max-width: 500px;
-	margin: auto;
-	.fila{
-		display: flex;
-		justify-content: space-between;
-		text-align: center;
-		margin: 10px 0;
-		.palabra{
-			@include containerInput;
-		}
-		input{
-			@include containerInput;
-			background: transparent;
-			outline: none;
-		}
-	}
-	button{
-		border: none;
-		background-color: $color;
-		color: $text-color;
-		display: block;
-		width: fit-content;
-		margin: auto;
-		border-radius: 30px;
-		font-size: 20px;
-		padding: 7px 10px;
-		animation: zoom 1.5s infinite linear;
-	}
-}
-
-.niveles{
-	background-color: $black-color;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: auto;
+main{
 	display: flex;
-	justify-content: center;
-	padding: 10px 0;
-	.nivel{
-		background-color: $grey-color;
-		width: 60px;
-		height: 50px;
-		margin: 5px;
-		position: relative;
-		border-radius: 10px;
-		transition: .6s;
+	flex-direction: column;
+	width: 100%;
+	margin: 20px auto;
+	h1{
+		font-size: 40px;
+		text-align: center;
+		color: $text-color;
+		font-weight: bold;
+	}
+	h2{
+		font-size: 35px;
+		text-align: center;
+		color: $first-color;
+		letter-spacing: 5px;
+	}
+	.container{
+		padding: 12px;
+		max-width: 500px;
+		margin: auto;
+		.fila{
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+			margin: 10px 0;
+			.palabra{
+				@include containerInput;
+			}
+			input{
+				@include containerInput;
+				background: transparent;
+				outline: none;
+			}
+		}
+		button{
+			border: none;
+			background-color: $color;
+			color: $text-color;
+			display: block;
+			width: fit-content;
+			margin: auto;
+			border-radius: 30px;
+			font-size: 20px;
+			padding: 7px 10px;
+			animation: zoom 1.5s infinite linear;
+		}
+	}
+}
+
+footer{
+	.niveles{
+		background-color: $black-color;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		i{
-			font-size: 35px;
-			color: $black-color;
+		padding: 10px 0;
+		.nivel{
+			background-color: $grey-color;
+			width: 60px;
+			height: 50px;
+			margin: 5px;
+			position: relative;
+			border-radius: 10px;
+			transition: .6s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			i{
+				font-size: 35px;
+				color: $black-color;
+			}
 		}
 	}
 }
+
+
 
 .modal{
 	display: flex;

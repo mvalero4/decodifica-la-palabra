@@ -69,6 +69,8 @@ function agregarPalabra(){
         palabra.className = "palabra";
         div.appendChild(palabra);
         let input = document.createElement("input");
+        input.type = "text";
+        input.style.textTransform = 'uppercase';
         input.id = i;
         //al input le agrego el evento onkeyup para detectar cuando se presiono una tecla
         //y llamo a la función corregir
@@ -84,7 +86,7 @@ efectoNivel();
 
 //función
 function corregir(i){
-    p = document.getElementById(i).value;
+    p = document.getElementById(i).value.toUpperCase();
     if(p==""){
         return;
     }
